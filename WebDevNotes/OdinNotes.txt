@@ -1,0 +1,12 @@
+Notes for HTML and CSS and JS
+
+HTML: Tags. Elements and Attributes
+
+HTML 'tags' are used to hold the HTML element.
+
+HTML 'elements' holds the content.
+
+HTML 'attributes' are used tp describe the characteristic of an HTML element
+in detail. 
+
+EXAMPLE: <p></p> paragraph Tag , <img><img> Element, src ="mydog.jpg" Attrib.
