@@ -1,0 +1,32 @@
+
+
+						Git Setup
+
+ 
+
+Summary of setup notes.
+
+
+Create a GitHub SSH key pair with the ssh-keygen command
+Copy the value of the public SSH key to the clipboard
+Login to GitHub and navigate to your account settings
+Click on the SSH and GPG link
+Click Add Key to register the public SSH key with your account
+Name the key and paste the copied value into the text field
+Save your changes	
+In your Git client, use the SSH based GitHub URL to clone your repo
+
+Make sure that you have run the 'Git init command' on the work repo
+
+
+1. Create you SSH Key for GitHub:
+
+  'github@ubuntu:~/.ssh$ ssh-keygen -o -t rsa -C "email@example.com"'
+
+2. Show the SSH Key and Copy it into your GitHub Account:
+
+ 'github@ubuntu:~/.ssh$ ssh-keygen -o -t rsa -C "github@mcnz.com"
+
+3. Make SSH Clone of GitHub repo:
+
+ 'git clone git@github.com:cameronmcnz/rock-paper-scissors.git'
