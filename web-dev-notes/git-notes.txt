@@ -16,8 +16,7 @@ Name the key and paste the copied value into the text field
 Save your changes	
 In your Git client, use the SSH based GitHub URL to clone your repo
 
-Make sure that you have run the 'Git init command' on the work repo
-
+CLONING a REPO
 
 1. Create you SSH Key for GitHub:
 
@@ -30,3 +29,32 @@ Make sure that you have run the 'Git init command' on the work repo
 3. Make SSH Clone of GitHub repo:
 
  'git clone git@github.com:cameronmcnz/rock-paper-scissors.git'
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+CREATING A NEW REPO  using 'git init':
+
+1. 'git init' inside the dir you wish to make a new repo inside. That places the .git file (hidden) inside the working dir.
+
+2. 'rm -r -f .git' to remove the .git file placed by the 'init' command.
+
+
+
+!!!!!!MOVING OR RENAMING A DIRECTORY IN A REPO REQUIRES THE USE OF THE  'git mv' COMMAND DO NOT USE A REGULAR 'mv or cp' COMMAND!!!!!!
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+Creating a NEW BRANCH and MERGING using git commands:
+
+1. Use the 'git checkout -b "namebranch"' command which changes to and creates a new branch and names it.
+
+2  Use the 'git checkout "name of main" ' to move back to master or main branch. You must commit changes before doing so!
+
+3. Use the 'git merge "namebranch" if you're ready to merge the changes into the main branch.
+
