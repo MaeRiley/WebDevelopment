@@ -7,18 +7,26 @@
 
 p{}
 
+a{
+    
+    color: rgb(255, 169, 255);
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
 body{
     
     font-size: 48px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: azure;
-    background: rgb(80, 33, 133);
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(91, 255, 255);
+    background: rgb(65, 17, 92);
 }
 
 #menu{}
 
 #header{}
 
-#
 
 
