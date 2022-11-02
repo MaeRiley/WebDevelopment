@@ -1,22 +1,29 @@
 
 
-						Git Setup
+						    Git Setup and Common Commands
 
- 
+--------------------------------------------------------------------------------------------------------------------------
 
-Summary of setup notes.
+* Create a GitHub SSH key with the ssh-keygen command
+
+* Copy the value of the public SSH key to the clipboard
+
+* Login to GitHub and navigate to your account settings
+
+* Click on the SSH and GPG link
+
+* Click Add Key to register the public SSH key with your account
+
+* Name the key and paste the copied value into the text field
+
+* Save your changes	
+
+* In your Git client, use the SSH based GitHub URL to clone your repo
+
+--------------------------------------------------------------------------------------------------------------------------
 
 
-Create a GitHub SSH key pair with the ssh-keygen command
-Copy the value of the public SSH key to the clipboard
-Login to GitHub and navigate to your account settings
-Click on the SSH and GPG link
-Click Add Key to register the public SSH key with your account
-Name the key and paste the copied value into the text field
-Save your changes	
-In your Git client, use the SSH based GitHub URL to clone your repo
-
-CLONING a REPO
+                                CLONING a REPO
 
 1. Create you SSH Key for GitHub:
 
@@ -34,13 +41,12 @@ CLONING a REPO
 
 --------------------------------------------------------------------------------------------------------------------------
 
+                        CREATING A NEW REPO using 'git init'
 
-
-CREATING A NEW REPO  using 'git init':
 
 1. 'git init' inside the dir you wish to make a new repo inside. That places the .git file (hidden) inside the working dir.
 
-2. 'rm -r -f .git' to remove the .git file placed by the 'init' command.
+2. If you want to remove the .git file 'rm -r -f .git' to remove the .git file placed by the 'init' command.
 
 
 
@@ -50,7 +56,8 @@ CREATING A NEW REPO  using 'git init':
 --------------------------------------------------------------------------------------------------------------------------
 
 
-Creating a NEW BRANCH and MERGING and DELETING BRANCH using git commands:
+Creating a NEW BRANCH and MERGING and DELETING BRANCH using git commands
+
 
 1. Use the 'git checkout -b "namebranch"' command which changes to and creates a new branch and names it.
 
@@ -58,5 +65,5 @@ Creating a NEW BRANCH and MERGING and DELETING BRANCH using git commands:
 
 3. Use the 'git merge "namebranch" if you're ready to merge the changes into the main branch.
 
-4. Deleting a branch requires to CHECKOUT into another branch and then run 'git branch --delete "branchname" '.
+4. Deleting a branch requires you to CHECKOUT into another branch and then run 'git branch --delete "branchname" '.
 
