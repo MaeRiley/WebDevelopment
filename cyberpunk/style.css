@@ -1,23 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 * {
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 header.title{
     
     max-width: 800px;
     min-height: 100px;
-    display: flex;
+    display:flex;
     
+}
+
+footer{
+
+
 }
 
 #lucy{
 
     border:0.1rem solid rgb(91, 255, 255);
-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    max-height:60%;
+    max-width: 60%;
 
 }
 
@@ -39,13 +46,12 @@ ul{
 }
 
 li,a{
-font-size: 1rem;
-text-decoration:none;
-padding: 0.2rem;
+    font-size: 1rem;
+    text-decoration:none;
+    padding: 0.2rem;
 
 
 }
-
 
 h1.blue{
 
@@ -58,7 +64,7 @@ h1.blue{
 
 h1.white{
 
-    color:azure;
+    color:#f0ffff;
     font-family:'Libre Barcode 39 Text', sans-serif;
     font-size:4rem;
     
