@@ -1,11 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+header[
+    
+    height:100%;
+    width:100%;
+]
+
+#lucy{
+border:0.1rem solid rgb(162, 255, 162);
+border-radius: 0.1rem;
+height:100%;
+width:100%;
+}
 
 a{
     
     color: rgb(255, 212, 255);
-    font-size: 28px;
     font-family:'Russo One', sans-serif;
-    text-decoration:none;
+    
     
 
 }
@@ -19,9 +38,22 @@ ul{
     list-style-type: none;
 }
 
+li,a{
+font-size: 1rem;
+text-decoration:none;
+}
+
+
+h1{
+
+    color:rgb(91, 255, 255);
+    font-family:'Libre Barcode 39 Text', sans-serif;
+    font-size:4rem;
+
+}
+
 body{
-    
-    font-size: 48px;
+    font-size:1rem;
     font-family:'Russo One', sans-serif;
     line-height:1.5;
     color:rgb(91, 255, 255);
