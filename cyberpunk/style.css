@@ -6,12 +6,18 @@ padding:0;
 box-sizing:border-box;
 }
 
-
+header.title{
+    
+    max-width: 800px;
+    min-height: 100px;
+    display: flex;
+    
+}
 
 #lucy{
-border:0.1rem solid rgb(91, 255, 255);
-border-radius: 0.5rem;
 
+    border:0.1rem solid rgb(91, 255, 255);
+border-radius: 0.5rem;
 
 }
 
@@ -19,9 +25,6 @@ a{
     
     color: rgb(255, 212, 255);
     font-family:'Russo One', sans-serif;
-    
-    
-
 }
 
 a:hover{
@@ -44,11 +47,24 @@ padding: 0.2rem;
 }
 
 
-h1{
+h1.blue{
 
     color:rgb(91, 255, 255);
     font-family:'Libre Barcode 39 Text', sans-serif;
     font-size:4rem;
+    
+
+}
+
+h1.white{
+
+    color:azure;
+    font-family:'Libre Barcode 39 Text', sans-serif;
+    font-size:4rem;
+    
+    padding-right:1em;
+    /*padding-left: 0.1em;*/
+    padding-top: 0.2em;
 
 }
 
