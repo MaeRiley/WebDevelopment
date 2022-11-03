@@ -8,8 +8,8 @@
 
 header.title{
     
-    max-width: 800px;
-    min-height: 100px;
+    max-width:60%;
+    min-height:60%;
     display:flex;
     
 }
@@ -22,9 +22,9 @@ footer{
 #lucy{
 
     border:0.1rem solid rgb(91, 255, 255);
-    border-radius: 0.5rem;
+    border-radius:0.5rem;
     max-height:60%;
-    max-width: 60%;
+    max-width:60%;
 
 }
 
@@ -38,15 +38,16 @@ a:hover{
 
     color:rgb(162, 255, 162);
     border:0.1rem solid rgb(162, 255, 162); 
-    border-radius: 0.5rem;
+    border-radius:0.5rem;
 }
 
 ul{
-    list-style-type: none;
+    list-style-type:none;
 }
 
 li,a{
-    font-size: 1rem;
+    
+    font-size:1rem;
     text-decoration:none;
     padding: 0.2rem;
 
@@ -67,14 +68,14 @@ h1.white{
     color:#f0ffff;
     font-family:'Libre Barcode 39 Text', sans-serif;
     font-size:4rem;
-    
     padding-right:1em;
     /*padding-left: 0.1em;*/
-    padding-top: 0.2em;
+    padding-top:0.2em;
 
 }
 
 body{
+    
     font-size:1rem;
     font-family:'Russo One', sans-serif;
     line-height:1.5;
