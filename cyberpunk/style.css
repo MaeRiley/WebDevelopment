@@ -1,19 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 * {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 header.title{
     
-<<<<<<< HEAD
-=======
-    max-width:60%;
-    min-height:60%;
-    display:flex;
->>>>>>> 84b3a18b106140d6d741cf8b35dfc123bc1515d0
     
     display: flex;
     justify-content:center;
@@ -29,21 +23,10 @@ header.title{
 
 }
 
-footer{
-
-
-}
-
 #lucy{
 
     border:0.1rem solid rgb(91, 255, 255);
-<<<<<<< HEAD
     border-radius: 0.5rem;
-=======
-    border-radius:0.5rem;
-    max-height:60%;
-    max-width:60%;
->>>>>>> 84b3a18b106140d6d741cf8b35dfc123bc1515d0
 
 }
 
@@ -57,21 +40,21 @@ a:hover{
 
     color:rgb(162, 255, 162);
     border:0.1rem solid rgb(162, 255, 162); 
-    border-radius:0.5rem;
+    border-radius: 0.5rem;
 }
 
 ul{
-    list-style-type:none;
+    list-style-type: none;
 }
 
 li,a{
-    
-    font-size:1rem;
-    text-decoration:none;
-    padding: 0.2rem;
+font-size: 1rem;
+text-decoration:none;
+padding: 0.2rem;
 
 
 }
+
 
 h1.blue{
 
@@ -84,21 +67,14 @@ h1.blue{
 
 h1.white{
 
-    color:#f0ffff;
+    color:azure;
     font-family:'Libre Barcode 39 Text', sans-serif;
     font-size:4rem;
-<<<<<<< HEAD
     padding-top: 0.2em;
-=======
-    padding-right:1em;
-    /*padding-left: 0.1em;*/
-    padding-top:0.2em;
->>>>>>> 84b3a18b106140d6d741cf8b35dfc123bc1515d0
 
 }
 
 body{
-    
     font-size:1rem;
     font-family:'Russo One', sans-serif;
     line-height:1.5;
