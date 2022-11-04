@@ -8,16 +8,25 @@ box-sizing:border-box;
 
 header.title{
     
-    max-width: 800px;
-    min-height: 100px;
-    display: flex;
     
+    display: flex;
+    justify-content:center;
+    
+}
+
+
+.lucycontainer{
+
+    display:flex;
+    justify-content:center;
+
+
 }
 
 #lucy{
 
     border:0.1rem solid rgb(91, 255, 255);
-border-radius: 0.5rem;
+    border-radius: 0.5rem;
 
 }
 
@@ -61,9 +70,6 @@ h1.white{
     color:azure;
     font-family:'Libre Barcode 39 Text', sans-serif;
     font-size:4rem;
-    
-    padding-right:1em;
-    /*padding-left: 0.1em;*/
     padding-top: 0.2em;
 
 }
@@ -74,6 +80,8 @@ body{
     line-height:1.5;
     color:rgb(91, 255, 255);
     background: rgb(43, 19, 58);
+    
+    
     
 }
 
