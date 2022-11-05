@@ -66,6 +66,11 @@
 
 4. Deleting a branch requires you to CHECKOUT into another branch and then run 'git branch --delete "branchname" '.
 
+IF THE LOCAL MASTER AND REMOTE MASTER DON'T MATCH THEN:
+
+'git fetch origin
+git reset --hard origin/master'
+
 
 --------------------------------------------------------------------------------------------------------------------------
 
