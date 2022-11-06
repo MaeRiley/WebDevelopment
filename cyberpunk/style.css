@@ -4,13 +4,28 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+background: rgb(43, 19, 58);
+
 }
 
 header.title{
     
     
     display: flex;
+    align-items: flex-start;
     justify-content:center;
+
+    
+}
+
+body{
+    font-size:1rem;
+    font-family:'Russo One', sans-serif;
+    line-height:1.5;
+    color:rgb(91, 255, 255);
+    background: rgb(43, 19, 58);
+    
+    
     
 }
 
@@ -18,6 +33,7 @@ header.title{
 .lucycontainer{
 
     display:flex;
+    align-items:center;
     justify-content:center;
 
 
@@ -43,14 +59,32 @@ a:hover{
     border-radius: 0.5rem;
 }
 
-ul{
-    list-style-type: none;
+nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
-li,a{
+.nav__links{
+
+    list-style-type: none;
+    
+}
+
+
+.nav__links, li{
+
+    display: inline-block;
+}
+
+.nav__links, li, a{
+
 font-size: 1rem;
 text-decoration:none;
-padding: 0.2rem;
+padding: 0.5rem;
+
 
 
 }
@@ -74,24 +108,9 @@ h1.white{
 
 }
 
-body{
-    font-size:1rem;
-    font-family:'Russo One', sans-serif;
-    line-height:1.5;
-    color:rgb(91, 255, 255);
-    background: rgb(43, 19, 58);
-    
-    
-    
-}
 
-nav{
 
-    display: flex;
-    justify-content: left;
-    
 
-}
 
 
 
