@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 * {
+
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -15,8 +16,6 @@ header.title{
     align-items: flex-start;
     justify-content:center;
     
-   
-    
 }
 
 h1.blue{
@@ -25,8 +24,6 @@ h1.blue{
     font-family:'Libre Barcode 39 Text', sans-serif;
     font-size:4rem;
     
-    
-
 }
 
 h1.white{
@@ -40,13 +37,12 @@ h1.white{
 
 
 body{
+    
     font-size:1rem;
     font-family:'Russo One', sans-serif;
     line-height:1.5;
     color:rgb(91, 255, 255);
     background: rgb(43, 19, 58);
-    
-    
     
 }
 
@@ -57,8 +53,6 @@ body{
     align-items:center;
     justify-content:center;
 
-
-
 }
 
 #lucy{
@@ -67,8 +61,6 @@ body{
     max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
-
-
 }
 
 a{
@@ -90,14 +82,11 @@ nav{
     align-items: center;
     justify-content: space-around;
     
-   
-    
 }
 
 .nav__links{
 
     list-style-type: none;
-    
     
 }
 
@@ -109,9 +98,9 @@ nav{
 
 .nav__links, li, a{
 
-font-size: 1rem;
-text-decoration:none;
-padding: 0.5rem;
+    font-size: 1rem;
+    text-decoration:none;
+    padding: 0.5rem;
 
 
 }
