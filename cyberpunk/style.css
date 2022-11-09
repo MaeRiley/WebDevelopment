@@ -9,9 +9,14 @@ background: rgb(43, 19, 58);
 
 }
 
+header{
+    display:inline-flex;
+    margin: 1em;
+}
+
 header.title{
     
-    padding-top: 0.4rem;
+    
     display: flex;
     align-items: flex-start;
     justify-content:center;
@@ -40,9 +45,8 @@ body{
     
     font-size:1rem;
     font-family:'Russo One', sans-serif;
-    line-height:1.5;
     color:rgb(91, 255, 255);
-    background: rgb(43, 19, 58);
+    
     
 }
 
@@ -76,11 +80,18 @@ a:hover{
     border-radius: 0.5rem;
 }
 
+article{
+
+    display: flex;
+    margin: 10px 400px 20px;
+}
+
 nav{
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 1em;
     
 }
 
@@ -105,10 +116,35 @@ nav{
 
 }
 
-/*footer{
+footer{
 
-} */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 
+}
+
+.footer__links{
+
+    list-style-type: none;
+
+}
+
+.footer__links > li {
+
+    display: inline-block;
+
+}
+
+.footer__links > li > a{
+
+    
+    font-size: 0.5rem;
+    text-decoration:none;
+    padding: 0.5rem;
+
+
+}
 
 
 
