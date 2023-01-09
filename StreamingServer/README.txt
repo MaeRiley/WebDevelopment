@@ -1,0 +1,1 @@
+This repo contains all the config files for nginx and tomcat9 in addition to the index.html for my server. Place the files in their appropriate directories. 
