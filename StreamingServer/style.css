@@ -1,0 +1,49 @@
+#video {
+    width:70%;
+    height: 70%;
+    background-color: black;
+  }
+  
+  
+  header {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+  }
+
+
+  .player {
+
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+  
+  
+  color: aliceblue;
+  font-family:'Rubik Vinyl';
+  
+  }
+
+  h6 {
+
+  color: aliceblue;
+  font-family: monospace;
+
+  }
+
+  body {
+    background-color: rgb(29, 26, 26);
+   
+  }

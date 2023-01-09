@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>@import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap'); </style>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/site.webmanifest">
+
+
+  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  <title>Awwter Player</title>
+</head>
+<header><h1>Awwter.Stream</h1></header>
+<body>
+   <!--Hello, if you're reading this I like you :3 Please don't judge my code too harshly-->
+  <div class="player">
+    <video id="video" controls></video>
+    <script>
+
+          var video = document.getElementById('video');
+          //This will need to change to 'https://source:8445' once SSL certs are configured
+          var videoSrc = 'http://awwter.stream:8080/hls/swimming.m3u8';
+
+          //
+          // First check for native browser HLS support
+          //
+
+          if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoSrc;
+
+          //
+          // If no native HLS support, check if HLS.js is supported
+          //
+
+           } else if (Hls.isSupported()) {
+
+                var hls = new Hls();
+                hls.attachMedia(video);
+                hls.loadSource(videoSrc);
+                hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                //I called this 'video.mute' method so the stream will autoplay
+                video.muted = true;
+                video.play();
+           });
+
+          }
+
+    </script>
+
+  </div>
+  </body>
+  <footer><h6>Created 2023 by <a href = "https://linktr.ee/mae_riley">Riley_Mae</a></h6></footer>
+
+</html>
