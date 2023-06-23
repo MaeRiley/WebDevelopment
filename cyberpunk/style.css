@@ -1,5 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@font-face {
+    font-family: 'LibreBarcode39Text-Regular';
+    src: url('fonts/LibreBarcode39Text-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RussoOne-Regular';
+    src: url('fonts/RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
 
 margin:0;
@@ -10,80 +21,163 @@ background: rgb(43, 19, 58);
 }
 
 header{
-    display:inline-flex;
+    
     margin: 1em;
+    
 }
 
-header.title{
+.title{
     
     
     display: flex;
     align-items: flex-start;
     justify-content:center;
+    padding-top: 10px;
     
 }
 
 h1.blue{
 
     color:rgb(91, 255, 255);
-    font-family:'Libre Barcode 39 Text', sans-serif;
-    font-size:4rem;
+    font-family:'LibreBarcode39Text-Regular', sans-serif;
+    font-size:3rem;
     
 }
 
 h1.white{
 
     color:azure;
-    font-family:'Libre Barcode 39 Text', sans-serif;
-    font-size:4rem;
+    font-family:'LibreBarcode39Text-Regular', sans-serif;
+    font-size:3rem;
     padding-top: 0.2em;
 
 }
 
 
+
+.p1{
+
+    font-size: 0.8rem;
+    font-family:'RussoOne-Regular', sans-serif;
+    color:rgb(91, 255, 255);
+    line-height: 1.7;
+    letter-spacing: 1.0px;
+    
+}
+
+
+.stats+ul{
+    
+    font-size: 2.8rem;
+    font-family:'LibreBarcode39Text-Regular', sans-serif;
+}
+
+
+
+
+#container{
+
+    
+    max-width: 640px;
+    margin: 0 auto;
+    
+}
+
+
 body{
     
-    font-size:1rem;
-    font-family:'Russo One', sans-serif;
+    
+    font-family:'RussoOne-Regular', sans-serif;
+    
     color:rgb(91, 255, 255);
     
     
 }
 
 
-.lucycontainer{
+.mediacontainer{
 
     display:flex;
     align-items:center;
     justify-content:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+    
 
 }
 
-#lucy{
+#photos{
 
-    border:0.1rem solid rgb(91, 255, 255);
+    
     max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
+    border:0.1rem solid rgb(91, 255, 255);
+    
 }
 
 a{
     
     color: rgb(255, 212, 255);
-    font-family:'Russo One', sans-serif;
+    font-family:'RussoOne-Regular', sans-serif;
 }
 
 a:hover{
 
     color:rgb(162, 255, 162);
-    /*border:0.5rem solid rgb(162, 255, 162);*/
     border-radius: 0.5rem;
 }
 
-article{
 
-    display: flex;
-    margin: 10px 400px 20px;
+.textblocks{
+    
+    gap: 20px;
+    display: grid;
+    grid-template-columns:1fr;
+    height: fit-content;
+    padding-bottom: 10px;
+    
+}
+
+.subject{
+    
+    
+    
+    padding-bottom: 10px;
+    
+    
+    
+
+   
+    
+    
+}
+
+
+.item1{
+    
+    
+    padding: 20px;
+    border-radius: 0.5rem;
+    border:0.1rem solid rgb(91, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+    
+    
+}
+
+
+.item2{
+
+    padding: 20px;
+    border-radius: 0.5rem;
+    border:0.1rem solid rgb(91, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 nav{
@@ -104,10 +198,10 @@ nav{
 
 .nav__links, li{
 
-    display: inline-block;
+    display: flex;
 }
 
-.nav__links, li, a{
+.nav__links > li > a{
 
     font-size: 1rem;
     text-decoration:none;
@@ -139,12 +233,31 @@ footer{
 .footer__links > li > a{
 
     
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     text-decoration:none;
     padding: 0.5rem;
 
 
 }
+
+.blinky h2::after {
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: #7fe5ff;
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+  }
+
+
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
+
+
 
 
 
