@@ -103,9 +103,6 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     
-    
-    
-
 }
 
 #photos{
@@ -131,7 +128,7 @@ a:hover{
 }
 
 
-.textblocks{
+.contentblocks{
     
     gap: 20px;
     display: grid;
@@ -148,11 +145,6 @@ a:hover{
     padding-bottom: 10px;
     
     
-    
-
-   
-    
-    
 }
 
 
@@ -165,7 +157,6 @@ a:hover{
     padding-top: 20px;
     padding-bottom: 20px;
    
-    
     
 }
 
