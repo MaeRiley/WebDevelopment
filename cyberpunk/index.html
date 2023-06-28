@@ -54,9 +54,49 @@
            <div class="blinky">
             <h2 class="subject">// get.Feed //</h2>
            </div>
-           <p class="p1">
+           <p></p>
 
-            </p>
+           
+           
+           <div class="rss-feed">
+            <ul class="feed-list">
+              <!-- RSS items will be dynamically added here -->
+            </ul>
+          </div>
+
+          
+
+          <script>
+            // Replace "RSS_FEED_URL" with the URL of your actual RSS feed
+            const rssFeedUrl = "https://maetech.io/?feed=rss";
+            const feedContainer = document.querySelector(".feed-list");
+          
+            fetch(rssFeedUrl)
+              .then((response) => response.text())
+              .then((data) => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(data, "text/xml");
+                const items = xmlDoc.querySelectorAll("item");
+          
+                items.forEach((item) => {
+                  const title = item.querySelector("title").textContent;
+                  const link = item.querySelector("link").textContent;
+          
+                  const listItem = document.createElement("li");
+                  listItem.innerHTML = `<a href="${link}">${title}</a>`;
+          
+                  feedContainer.appendChild(listItem);
+                });
+              })
+              .catch((error) => {
+                console.error("Error fetching RSS feed:", error);
+              });
+          </script>
+          
+
+
+
+
           </div>
          <!-- <div class="item3">
             <h2></h2>
