@@ -9,7 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <title>I really want to stay at your house...</title>
+    
   </head>
 
   <body>
@@ -39,26 +41,63 @@
         <div class="contentblocks">
           <div class="item1">
             <div class="blinky">
-              <h2 class="subject">// initializing //</h2>
+              
+              <h2 class="subject">// begin.loadStream //</h2>
+            
             </div>
-            <p>//</p>
-            <p class="p1">I've decided to use neocities as an excuse to practice some webdevelopment.
-              As I learn more about flexbox and CSS I hope to improve the look over time.
-              This site is a tribute to cyberpunk  a e s t h e t i c s  and early 00's web culture!</p>
-              <p>/</p>
-              <p>/</p>
-              <p class="p1">Hopefully, more to come soon! Be safe out there, chooms! :3</p>
-              <p>//</p>
-          </div>
-          <div class="item2">
-           <div class="blinky">
-            <h2 class="subject">// get.Feed //</h2>
-           </div>
-           <p class="p1">
+            
+            
 
-            </p>
+            <div class="streamplayer">
+            
+              <video id="video" controls poster="offline.png"></video>
+           
+            </div>
+
+
+
+
+            <script>
+
+              var video = document.getElementById('video');
+              var videoSrc = 'http://awwter.stream:8080/hls/swimming.m3u8';
+    
+              //
+              // First check for native browser HLS support
+              //
+    
+              if (video.canPlayType('application/vnd.apple.mpegurl')) {
+              video.src = videoSrc;
+    
+              //
+              // If no native HLS support, check if HLS.js is supported
+              //
+    
+               } else if (Hls.isSupported()) {
+    
+                    var hls = new Hls();
+                    hls.attachMedia(video);
+                    hls.loadSource(videoSrc);
+                    hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                    //I called this 'video.mute' method so the stream will autoplay
+                    video.muted = true;
+                    video.play();
+               });
+    
+              }
+    
+        </script>
+
+
+    
+            
+      
           </div>
-         <!-- <div class="item3">
+          <!-- <div class="item2">
+            <h2></h2>
+            <p></p>
+          </div>
+          <div class="item3">
             <h2></h2>
             <p></p>
           </div>
