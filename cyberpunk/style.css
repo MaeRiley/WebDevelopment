@@ -65,6 +65,7 @@ h1.white{
     line-height: 1.7;
     letter-spacing: 1.0px;
     
+    
 }
 
 
@@ -94,6 +95,9 @@ h1.white{
 
 
 }
+
+
+
   
 
 #container{
@@ -190,6 +194,17 @@ a:hover{
     border:0.1rem solid rgb(91, 255, 255);
     padding-top: 20px;
     padding-bottom: 20px;
+    
+
+}
+
+.feed {
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 
 }
 
