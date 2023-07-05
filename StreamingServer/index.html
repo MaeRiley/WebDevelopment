@@ -24,38 +24,43 @@
    <!--Hello, if you're reading this I like you :3 Please don't judge my code too harshly-->
   <div class="player">
     <video id="video" controls poster="offline.png"></video>
+    
     <script>
-
+      function loadVideo() {
           var video = document.getElementById('video');
-          //This the HLS server
           var videoSrc = 'https://awwter.stream:8443/hls/swimming.m3u8';
-
-          //
-          // First check for native browser HLS support
-          //
-
+  
           if (video.canPlayType('application/vnd.apple.mpegurl')) {
-          video.src = videoSrc;
-
-          //
-          // If no native HLS support, check if HLS.js is supported
-          //
-
-           } else if (Hls.isSupported()) {
-
-                var hls = new Hls();
-                hls.attachMedia(video);
-                hls.loadSource(videoSrc);
-                hls.on(Hls.Events.MANIFEST_PARSED, function() {
-                //I called this 'video.mute' method so the stream will autoplay
-                video.muted = true;
-                video.play();
-           });
-
+              video.src = videoSrc;
+              video.muted = true;
+              video.play();
+          } else if (Hls.isSupported()) {
+              var hls = new Hls();
+              hls.attachMedia(video);
+              hls.loadSource(videoSrc);
+              hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                  video.muted = true;
+                  video.play();
+              });
           }
-
-    </script>
-
+      }
+  
+      // Call the loadVideo function initially
+      loadVideo();
+  
+      // Function to check if the video is playing, and reload if not
+      function checkVideo() {
+          var video = document.getElementById('video');
+          if (video.paused || video.ended) {
+              // Reload the video
+              loadVideo();
+          }
+      }
+  
+      // Check the video status every 1 second
+      setInterval(checkVideo, 1000);
+  </script>
+  
 
   </div>
   </body>
