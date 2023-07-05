@@ -26,6 +26,12 @@
     <video id="video" controls poster="offline.png"></video>
     
     <script>
+      
+      
+      var maxRetryTime = 10 * 60 * 1000; // 10 minutes in milliseconds
+      var retryTimeout;
+      
+      
       function loadVideo() {
           var video = document.getElementById('video');
           var videoSrc = 'https://awwter.stream:8443/hls/swimming.m3u8';
@@ -58,7 +64,15 @@
       }
   
       // Check the video status every 1 second
-      setInterval(checkVideo, 1000);
+      setInterval(checkVideo, 5000);
+
+
+      // Set a timer to stop trying after 10 minutes
+    retryTimeout = setTimeout(function() {
+        clearInterval(checkVideo);
+        clearTimeout(retryTimeout);
+        }, maxRetryTime);
+
   </script>
   
 
