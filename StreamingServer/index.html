@@ -28,7 +28,7 @@
     <script>
       
       
-      var maxRetryTime = 10 * 60 * 1000; // 10 minutes in milliseconds
+      var maxRetryTime = 1 * 60 * 1000; // 1 minutes in milliseconds
       var retryTimeout;
       
       
@@ -63,11 +63,11 @@
           }
       }
   
-      // Check the video status every 1 second
-      setInterval(checkVideo, 5000);
+      // Check the video status every 20 second
+      setInterval(checkVideo, 20000);
 
 
-      // Set a timer to stop trying after 10 minutes
+      // Set a timer to stop trying after 1 minutes
     retryTimeout = setTimeout(function() {
         clearInterval(checkVideo);
         clearTimeout(retryTimeout);
